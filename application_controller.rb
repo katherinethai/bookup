@@ -5,10 +5,12 @@ require_relative 'models/display_random.rb'
 
 
 class MyApp < Sinatra::Base
-  
-  #enable :sessions
 
   get '/' do
+    erb :index
+  end
+  
+  get '/home' do
     text1 = "  At dusk they pour from the sky.  They blow across the ramparts, turn cartwheels over rooftops, flutter into the ravines between houses.  Entire streets swirl with them, flashing white against the cobbles.  Urgent message to the inhabitants of this town, they say.  Depart immediately to open country. </n>   The tide climbs.  The moon hangs small and yellow and gibbous.  On the rooftops of beachfront hotels to the east, and in the gardens behind them, a half-dozen American artillery units drop incendiary rounds into the mouths of mortars."
 text2 = "  At precisely 5:15 every morning, seven days a week, Dr. Stephen Hellerman emerged from his modest brick colonial in the bucolic town of Silver Spring, Maryland, and jogged six miles.  Six-point-two miles, to be exact. </n>   Depending on whether it was Daylight Saving Time or not, it was either still dark or just dawn as he first stretched his calves against the tall oak shading most of his front yard, but no matter what the season, Dr. Hellerman, an acclaimed neurologist at Mercy Hospital in nearby Langley, rarely saw another human being from start to finish of his run. </n>  That was exactly how he wanted it. </n>  Although he’d never been married, dated sparingly, and socialized with friends even less, it wasn’t that the forty-eight-year-old doctor didn’t like people; he simply liked being alone better.  Being alone meant never being tempted to tell someone your secrets.  And Dr. Stephen Hellerman had a lot of secrets."
 text3 = "  We didn’t like to gossip; we loved to gossip. </n>	Did you hear? </n>	Most of the time, living in Nantucket comforted us; we felt like Mother Ocean was holding us in the palm of her hand.  But sometimes, the island made us restless and irritable.  Winter was bad, but spring was worse, because expect for a few short weeks, it was indistinguishable from winter. </n>	What had T.S. Eliot written?  April is the cruelest month. </n> 	Gossip was always the most rampant in the spring.  It ran like water in a newly thawed brook; it circulated through the air like pollen.  We could no sooner refrain from repeating what we’d heard than we could keep from rubbing our swollen, itchy eyes. </n>	 	We weren’t mean spirited or vindictive or cruel; we were simply bored, and after the long stretch without summer visitors, summer money, summer magic, our reservoirs were dry. </n>		Besides which, we were human beings, saddled with our own curiosities and our own insecurities.  We were aware of things happening in the wider world- human genomes being decoded on the MIT campus, tectonic plates shifting in California, Putin waging war in Ukraine- but none of those events captured our interest like those taking place on the 105 square miles of our home island.  We gossiped at the dentist, in the salon, in the produce section of the Stop & Shop, around the bar at the Boarding House; we gossiped over appetizers at the Anglers’ Club on Friday nights, between the pews of five o’clock Mass on Saturday nights, and in line at the Hub as we waited to buy our New York Times on Sunday mornings."
@@ -204,12 +206,16 @@ $books = {text1 => {:author => "Anthony Doerr",
       
   }
     @random_text = display_random_text($books)
+    erb :home
+  end
+  
+  get '/index' do
     erb :index
   end
     
-  post '/index' do
+  post '/home' do
       @random_text = display_random_text($books)
-      erb :index
+    erb :home
     end
   
   get "/reveal_book" do  
@@ -222,14 +228,9 @@ $books = {text1 => {:author => "Anthony Doerr",
     erb :reveal_book
   end
   
-  get "/index" do
+  get "/home" do
      @random_text = display_random_text($books)
-     erb :index
+    erb :home
    end
   end
 
-  
-  #post "/results" do
-    #sentence = params[:sentence]
-    #@pig_latinized_sentence = to_pig_latin(sentence)
-    #erb :results

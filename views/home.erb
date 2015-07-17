@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Book Up</title>
+  </head>
+  
+  <body>
+    <h1>Book Up</h1>
+    <h2>Get hooked on a good book.</h2>
+    <p>
+      <%=@random_text%>
+    </p>
+    <div id="button1">
+    <form method="POST">
+          <input type="submit" value="Next Book" id="submit">
+    </form>
+    </div>
+   
+    <div id="button2">
+    <form method"POST" action="/reveal_book">
+      <input type="submit" value="Reveal Book" id="submit">
+      <input type="hidden" name="text" value="<%=@random_text%>">
+    </form>
+    </div>
+    <br><br>
+  </body>
+</html>

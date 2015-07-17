@@ -9,21 +9,10 @@
   <body>
     <h1>Book Up</h1>
     <h2>Get hooked on a good book.</h2>
-    <p>
-      <%=@random_text%>
-    </p>
-    <div id="button1">
-    <form method="POST">
-          <input type="submit" value="Next Book" id="submit">
-    </form>
-    </div>
-   
-    <div id="button2">
-    <form method"POST" action="/reveal_book">
-      <input type="submit" value="Reveal Book" id="submit">
-      <input type="hidden" name="text" value="<%=@random_text%>">
-    </form>
-    </div>
-    <br><br>
+    <h3>
+      How it works:
+    </h3>
+    <p>Everyone says, “Never judge a book by its cover!”, but we are all guilty of putting a book back because it of its small font, heavy weight, or unappealing cover. With Book Up, users can read the first page of a book without judging it by its format. If users are intrigued by the first page, they can reveal the book, and click on the cover to purchase the book on Amazon.  </p>
+    <h3> <a href="/home">Book me up!</a> </h3> 
   </body>
 </html>
