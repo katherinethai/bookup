@@ -207,7 +207,7 @@ $books = {text1 => {:author => "Anthony Doerr",
     erb :index
   end
     
-    post '/' do
+  post '/index' do
       @random_text = display_random_text($books)
       erb :index
     end
