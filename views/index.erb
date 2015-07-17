@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'> 
+    <link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Book Up</title>
+  </head>
+  
+  <body>
+    <h1>Book Up</h1>
+    <p>
+      <%=@random_text%>
+    </p>
+    <div id="button1">
+    <form method="POST">
+          <input type="submit" value="Next Book" id="submit">
+    </form>
+    </div>
+   
+    <div id="button2">
+    <form method"POST" action="/reveal_book">
+      <input type="submit" value="Reveal Book" id="submit">
+      <input type="hidden" name="text" value="<%=@random_text%>">
+    </form>
+    </div>
+    <br><br>
+  </body>
+</html>

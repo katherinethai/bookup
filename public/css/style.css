@@ -1,0 +1,67 @@
+h1
+{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 72pt;
+  text-align: center;
+  
+}
+h2
+{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 36pt;
+  text-align: center;
+}
+body
+{
+  background-image: url("http://www.oshayspub.com/wp-content/uploads/2014/07/darkwood-plank-1024x718.jpg");
+  color: #9CFFFF;
+}
+#submit
+{
+  font-family: 'Just Another Hand', cursive;
+  font-size: 30pt;
+  display: inline-block;
+}
+#button1
+{
+  float: left;
+  margin-left: 200px;
+  
+}
+#button2
+{
+  float: right;
+  margin-right: 200px;
+}
+#button3
+{
+  margin: auto; 
+}
+#submit:hover {
+   border: none;
+   background: #9CFFFF;
+   box-shadow: 0px 0px 1px #777;
+}
+p
+{
+  border-color: #F5F5F5;
+  border-radius: 25px;
+  padding: 20px;
+  color: #000000;
+  background-color: #F5F5F5;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 600px;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 20px;  
+}
+
+img.cover 
+{
+  display: block;
+  height: 800px;
+  width: 530px;
+  margin-right:auto;
+  margin-left:auto;
+}
