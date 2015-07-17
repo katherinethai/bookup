@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps);
+@import url(https://fonts.googleapis.com/css?family=Just+Another+Hand);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:700);
 h1
 {
   font-family: 'Oleo Script Swash Caps', cursive;
@@ -13,7 +15,7 @@ h2
 }
 body
 {
-  background-image: url("https://www.oshayspub.com/wp-content/uploads/2014/07/darkwood-plank-1024x718.jpg");
+  background-image: url("http://www.oshayspub.com/wp-content/uploads/2014/07/darkwood-plank-1024x718.jpg");
   color: #9CFFFF;
 }
 #submit
