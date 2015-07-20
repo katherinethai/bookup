@@ -7,13 +7,14 @@
   </head>
   
   <body>
-    <h1><%=@title%></h1>
-    <h2><%=@author%></h2>
+    <h1><a href="/" id="main">Book Up</a></h1>
+    <h2><%=@title%></h2>
+    <h3><%=@author%></h3>
     <a href="<%=@link%>">
     <img class="cover" src="<%=@image%>" alt="Go to Amazon" >
     </a>
     <div id="button3">
-    <form method"POST" action="/index">
+    <form method"POST" action="/home">
       <input type="submit" value="New Book" id="submit">
     </form>
     </div>

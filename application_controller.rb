@@ -6,7 +6,7 @@ require_relative 'models/display_random.rb'
 
 class MyApp < Sinatra::Base
 
-  get '/' do
+  get '/index' do
     erb :index
   end
   
@@ -209,9 +209,9 @@ $books = {text1 => {:author => "Anthony Doerr",
     erb :home
   end
   
-  get '/index' do
-    erb :index
-  end
+    get '/' do
+      erb :index
+    end
     
   post '/home' do
       @random_text = display_random_text($books)
