@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Book Up</title>
+  </head>
+
+  <body>
+    <h1><a href="/" id="main">Book Up</a></h1>
+    <h2>Get hooked on a good book.</h2>
+   
+<h3>    <form method="POST" action="/newbook">
+  <h3> Title </h3><br>
+    <input type="text" name="title" placeholder="Title" class="enlargeinput"> <br>
+    <h3> Author </h3><br>
+    <input type="author" name="author" placeholder= "Author" class="enlargeinput"> <br>
+    <h3> Text of Page One </h3><br>
+    <textarea type="text" name="text" placeholder= "Text of Page One" class="enlargeparagraph" rows="40" cols="100" ></textarea>
+ <br>
+    <h3>Genre:</h3>
+    <input type="radio" name="genre" value= "Classic" checked >Classic <br>
+<input type="radio" name="genre" value= "Fiction" checked > Fiction <br>
+    <input type="radio" name="genre" value= "Nonfiction" checked >Nonfiction <br>
+    <input type="radio" name="genre" value= "Young Adult" checked >Young Adult <br>
+    <h3> Image URL </h3><br>
+    <input type="text" name="imagelink" placeholder= "Image URL" class="enlargeinput"> <br>
+    <h3> Amazon Link </h3><br>
+    <input type="text" name="amazonlink" placeholder= "Amazon Link" class="enlargeinput"> <br><br>
+    <input type="submit" id= "submit">
+  </form> </h3>
+<!--     <p>
+      <%=@random_text%>
+    </p>
+    <div id="button1">
+    <form method="POST">
+          <input type="submit" value="Next Book" id="submit">
+    </form>
+    </div>
+   
+    <div id="button2">
+    <form method"POST" action="/reveal_book">
+      <input type="submit" value="Reveal Book" id="submit">
+      <input type="hidden" name="text" value="<%=@random_text%>">
+    </form>
+    </div> -->
+    <br><br>
+  </body>
+</html>
+
+

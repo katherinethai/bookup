@@ -39,6 +39,12 @@ h3
   font-size: 24pt;
   text-align: center;
 }
+h4
+{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 10pt;
+  text-align: center;
+}
 a
 {
   font-family: 'Quicksand', sans-serif;
@@ -84,6 +90,27 @@ body
   float: right;
   margin-right: 200px;
 }
+#home
+{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 90pt;
+  color: #F5F5F5;
+  text-align: center;
+  text-decoration: none;
+  line-height: 200%;
+}
+#about
+{
+  float: left;
+  margin-left:200px;
+  text-decoration: none;
+}
+#contribute
+{
+  float: right;
+  margin-right: 200px;
+  text-decoration: none;
+}
 #submit:hover {
    border: none;
    background: #9CFFFF;
@@ -111,4 +138,28 @@ img.cover
   width: 530px;
   margin-right:auto;
   margin-left:auto;
+}
+
+.enlargeinput
+{width: 400px;
+  height: 30px;
+border-radius: 20px
+
+}
+
+.enlargeparagraph
+  {padding: 20px 20px 20px 20px;
+   line-height: 1em;
+  border-radius: 20px
+  }
+
+#contributebutton
+{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 10pt;
+  display: inline-block;
+  border-color: #F5F5F5;
+  border-radius: 10px;
+  padding: 0px;
+  color: #000000;
 }
