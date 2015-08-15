@@ -56,6 +56,10 @@ end
     erb :home
     end
   
+  get '/about' do
+    erb :about
+  end
+  
     get '/contribute' do
       erb :contribute
   end

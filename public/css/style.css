@@ -41,7 +41,7 @@ h3
 }
 h4
 {
-    font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 10pt;
   text-align: center;
 }
@@ -89,6 +89,27 @@ body
 {
   float: right;
   margin-right: 200px;
+}
+#home
+{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 90pt;
+  color: #F5F5F5;
+  text-align: center;
+  text-decoration: none;
+  line-height: 200%;
+}
+#about
+{
+  float: left;
+  margin-left:200px;
+  text-decoration: none;
+}
+#contribute
+{
+  float: right;
+  margin-right: 200px;
+  text-decoration: none;
 }
 #submit:hover {
    border: none;
