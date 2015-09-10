@@ -47,7 +47,7 @@ end
     erb :home
   end
   
-    get '/' do
+  get '/index' do
       erb :index
     end
     
