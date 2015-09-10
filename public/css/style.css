@@ -196,8 +196,9 @@ h4
   border-color: #F5F5F5;
   border-radius: 25px;
   padding: 20px;
-  color: #000000;
   text-align: center;
+  color: #00000;
+  box-shadow: none;
 }
 #button1
 {
@@ -214,6 +215,10 @@ h4
 {
   float: right;
   margin-right: 200px;
+}
+#button4
+{
+  text-align: center;
 }
 #home
 {
